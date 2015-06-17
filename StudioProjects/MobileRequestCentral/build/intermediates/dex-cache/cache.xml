@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\amitk\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-6a1a3db1c0e8967f4d538948e460927662871d3e.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\Shutterbug-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a8cddf69c52e040ba2ba1dbf9cc9404b083bd351">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\Shutterbug-1.0.0-91cd33bfbfd2707bade369d3c337e19eb7d640f9.jar" />
+    </item>
+
+</items>
