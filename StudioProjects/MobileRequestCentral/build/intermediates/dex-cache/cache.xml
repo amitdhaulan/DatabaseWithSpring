@@ -2,11 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\amitk\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\httpmime-4.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b0002c5fb66867ca919be0fbd86de1cfaf76da7">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\httpmime-4.3-9dce990b46689bbf8dbfc09c7cbb4d407ad71e9e.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\joda-time-2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\joda-time-2.0-5901b4d34a7f037c19340aefe08c4fdf2d4600c1.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.3.2\c75edc740a6d8cb1cef6fa82fa594e0bce561916\jackson-databind-2.3.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c75edc740a6d8cb1cef6fa82fa594e0bce561916">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-databind-2.3.2-d6ee3bc472071d96297d8eedbeea6fb091be34c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.3.2\559b70ac8a0d5cad611da4223137a920147201ba\jackson-core-2.3.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="559b70ac8a0d5cad611da4223137a920147201ba">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-core-2.3.2-6085c1b3c5031045c96f7b3de822064815450cea.jar" />
+    </item>
+    <item
+        jar="D:\softwares\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-6a1a3db1c0e8967f4d538948e460927662871d3e.jar" />
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-efc1ddd532b024cb054d85b86a45824dedaaceec.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.3.0\f5e853a20b60758922453d56f9ae1e64af5cb3da\jackson-annotations-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f5e853a20b60758922453d56f9ae1e64af5cb3da">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.3.0-9b0d2afc8dff2265a8dcdb86fa41873fe7519c7f.jar" />
     </item>
     <item
         jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\Shutterbug-1.0.0.jar"

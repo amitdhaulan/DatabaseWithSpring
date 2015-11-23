@@ -1,0 +1,45 @@
+Total number of currently running services:0
+TASK com.example.mobilerequestcentral id=4
+  ACTIVITY com.example.mobilerequestcentral/.LogIn 4b29112c pid=4632
+    Local Activity 4afe4fe4 State:
+      mResumed=true mStopped=false mFinished=false
+      mLoadersStarted=true
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 ?mcc?mnc en_US ldltr sw720dp w720dp h1079dp 160dpi lrg port finger qwerty/v/v -nav/h s.5}
+    FragmentManager misc state:
+      mActivity=com.example.mobilerequestcentral.LogIn@4afe4fe4
+      mContainer=android.app.Activity$1@4af8b030
+      mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=1907266 (63424 ms ago)
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{4b0233a4 V.E..... R.....I. 0,0-720,1104}
+        android.widget.LinearLayout{4b05a15c V.E..... ......I. 0,0-720,1104}
+          android.view.ViewStub{4afe8ce0 G.E..... ......I. 0,0-0,0 #102030e}
+          android.widget.FrameLayout{4b073164 V.ED.... ......I. 0,25-720,1104 #1020002 android:id/content}
+            android.widget.LinearLayout{4b01ef38 V.E..... ......I. 0,0-720,1079}
+              android.widget.ScrollView{4b020620 VFED.V.. ......I. 0,0-720,1079}
+                android.widget.LinearLayout{4b026f08 V.E..... ......I. 0,0-720,1079}
+                  android.widget.LinearLayout{4b0755ec V.E..... ......I. 0,0-720,571}
+                  android.widget.LinearLayout{4b048244 V.E..... ......I. 10,571-710,657}
+                    android.widget.EditText{4b01ed40 VFED..CL .F....I. 0,0-700,86 #7f0a0034 app:id/userid_et}
+                  android.widget.LinearLayout{4b0483e0 V.E..... ......I. 0,657-720,700}
+                  android.widget.LinearLayout{4b065cac V.E..... ......I. 10,700-710,786}
+                    android.widget.EditText{4b022de4 VFED..CL ......I. 0,0-700,86 #7f0a0035 app:id/password_et}
+                  android.widget.LinearLayout{4b065e20 V.E..... ......I. 10,786-710,829}
+                  android.widget.LinearLayout{4b074800 V.E..... ......I. 10,829-710,937}
+                    android.widget.RelativeLayout{4b0141f8 V.E..... ......I. 0,0-700,108}
+                      android.widget.Button{4b05989c VFED..C. ......I. 305,0-395,65 #7f0a0036 app:id/login_button}
+                  android.widget.RelativeLayout{4b072fd8 V.E..... ......I. 0,937-720,937}
+    Looper (main, tid 1) {4afea8d0}
+      (Total messages: 0, idling=false, quitting=false)

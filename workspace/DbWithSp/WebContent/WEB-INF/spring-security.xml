@@ -1,0 +1,31 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+           http://www.springframework.org/schema/security  
+           http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http pattern="/ping/**" security="none" />
+	<http pattern="/get/**" security="none" />
+	<http pattern="/add/**" security="none" />
+	<http pattern="/post/**" security="none" />
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/**" access="hasRole('ROLE_ADMIN')" />
+		<!-- <intercept-url pattern="/getList*" access="hasRole('ROLE_USER')" /> -->
+	</http>
+
+	<!-- Injecting static user name and password to the login form -->
+	<!-- <authentication-manager> <authentication-provider> <user-service> <user 
+		name="amit" password="amit" authorities="ROLE_USER" /> </user-service> </authentication-provider> 
+		</authentication-manager> -->
+
+
+	<!-- Injecting database user name and password to the login form -->
+	<authentication-manager>
+		<authentication-provider>
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select username,password,enabled from user_authentication where username=?"
+				authorities-by-username-query="select u1.username, u2.role from user_authentication u1, user_authorization u2 where u1.user_id = u2.user_id and u1.username =?" />
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>  

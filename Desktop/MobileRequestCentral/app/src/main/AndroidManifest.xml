@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilerequestcentral"
+    android:versionCode="1"
+    android:versionName="1.0.7" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--android:label="@string/app_name"-->
+      <!--  <activity
+            android:name="com.example.mobilerequestcentral.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="com.example.mobilerequestcentral.LogIn"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.MainActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.RequestCentralForm"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.locationfilterization.FloorListFragment"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.locationfilterization.SpaceListFragment"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.locationfilterization.UpdateSpaceListFragment"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.requestcentral"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.ViewRequestForm"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+       <!-- <activity
+            android:name="com.example.mobilerequestcentral.RequestCentralContainer"
+            android:screenOrientation="sensorPortrait" >
+        </activity>-->
+        <activity
+            android:name="com.example.mobilerequestcentral.locationNewDialogBuild"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.locationfilterization.locationNewDialogProp"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+<!--        <activity
+            android:name="com.example.locationfilterization.FloorSpaceContainer"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>-->
+        <activity
+            android:name="com.example.mobilerequestcentral.ViewRequestContainer"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.ViewRequestHome"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.ViewRequestContainerNew"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <activity
+            android:name="com.example.mobilerequestcentral.reservation.Reservation"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.reservation.MakeReservation"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.example.mobilerequestcentral.reservation.ReservationDetail"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".reservation.CancelReservationList"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".reservation.CancelReservation"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <activity
+            android:name=".reservation.CheckInReservationList"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".reservation.CheckInReservation"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+        <activity
+            android:name=".incidents.ReportIncident"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+
+    </application>
+
+</manifest>

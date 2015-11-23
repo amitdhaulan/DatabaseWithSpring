@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="property_pressed_color">#7383c4</color>
+    <color name="black">#000</color>
+    <color name="building_pressed_color">#7383c4</color>
+    <!-- <color name="building_pressed_color">#505AC7</color> -->
+    <color name="floor_pressed_color">#7383c4</color>
+    <color name="white">#ffffff</color>
+    <color name="normal_start_multi">#253D99</color>
+    <color name="normal_end_multi">#253D99</color>
+    <color name="normal_start">#253D99</color>
+    <color name="normal_end">#253D99</color>
+
+</resources>

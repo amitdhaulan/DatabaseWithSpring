@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/showlocation_outer_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".time_sheet_oneitem" >
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="horizontal">
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"     android:background="@drawable/prop_bg_key" android:layout_weight="0.8">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/prop_bg_key"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:id="@+id/time_sheet_oneitemrl_time"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/time_sheet_oneitemtv_taskid"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".30"
+                    android:gravity="left"
+                    android:text="Request Id"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/woid"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".70"
+                    android:gravity="left"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/time_sheet_oneitemrl_duration"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/time_sheet_oneitemtv_duration"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight=".30"
+                        android:gravity="left"
+                        android:text="Due Date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/duedate"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight=".70"
+                        android:gravity="left"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/time_sheet_oneitemrl_status"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/time_sheet_oneitemtv_status"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".30"
+                    android:gravity="left"
+                    android:text="Status"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".70"
+                    android:gravity="left"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/time_sheet_oneitemrl_ReqType"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/time_sheet_oneitemtv_ReqType"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".30"
+                    android:gravity="left"
+                    android:text="Request Type"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=":"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ReqType"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".70"
+                    android:gravity="left"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+  
+    </LinearLayout>
+</LinearLayout>

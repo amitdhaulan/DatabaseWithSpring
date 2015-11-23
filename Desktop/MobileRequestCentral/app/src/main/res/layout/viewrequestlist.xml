@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/material_outer_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".material" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight=".1"
+        style="@style/header"
+        android:gravity="left"
+        android:weightSum="1" >
+
+        android:background="@drawable/navigationbar"
+
+        <Button
+            android:id="@+id/request_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/buttoncustom"
+            android:padding="5dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/request_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="View Requests"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:background="@drawable/style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Request Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/filter_reqType"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>-->
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight=".1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/style"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Request Status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/filter_reqStatus"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_weight="0.9" >
+
+        <ListView
+            android:id="@+id/request_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style"
+
+            android:divider="@color/black"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+
+        <TextView
+            android:id="@+id/request_textview"
+            android:layout_width="match_parent"
+            android:background="@drawable/style"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:text="No requests to show..."
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    
+</LinearLayout>

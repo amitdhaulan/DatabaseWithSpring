@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/time_sheet_outer_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <RelativeLayout
+
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight=".1"
+        android:gravity="left"
+        android:weightSum="1" >
+        <!--android:background="@drawable/navigationbar"-->
+
+
+        <Button
+            android:id="@+id/checkinreservation_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttoncustom"
+            android:text="Back"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/reservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="My Reservations"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight=".8"
+        android:background="@drawable/style"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/checkinreservation_listview"
+            android:layout_weight=".8"
+            android:background="@drawable/style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:divider="#8B8386"
+            android:dividerHeight="2dp"
+            android:paddingBottom="5dp"
+            android:clickable="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            >
+        </ListView>
+
+        <TextView
+            android:id="@+id/checkinreservation_nodata"
+            android:layout_width="match_parent"
+            android:background="@drawable/style"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:text="No requests to show..."
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:weightSum="1" >
+
+        <!--<Button
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:text="Check In"
+            android:background="@drawable/buttoncustom"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:layout_marginRight="1dp"
+            android:id="@+id/reservation_button_checkin" />-->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttoncustom"
+            android:layout_margin="4dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:text="Check In"
+            android:layout_height="match_parent"
+            android:id="@+id/checkinreservation_button_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

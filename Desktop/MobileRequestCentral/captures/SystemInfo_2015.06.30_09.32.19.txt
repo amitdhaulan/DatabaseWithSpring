@@ -1,0 +1,36 @@
+Total number of currently running services:0
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        4b298628 com.example.mobilerequestcentral/.Splash filter 4b3861d4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Key Set Manager:
+  [com.example.mobilerequestcentral]
+      Signing KeySets: 6, 7
+
+Packages:
+  Package [com.example.mobilerequestcentral] (4afbd074):
+    userId=10128 gids=[3003, 1028, 1015, 1023]
+    pkg=Package{4b38dcac com.example.mobilerequestcentral}
+    codePath=/data/app/com.example.mobilerequestcentral-1.apk
+    resourcePath=/data/app/com.example.mobilerequestcentral-1.apk
+    nativeLibraryPath=/data/app-lib/com.example.mobilerequestcentral-1
+    versionCode=1 targetSdk=24
+    versionName=1.0
+    applicationInfo=ApplicationInfo{4b3970f0 com.example.mobilerequestcentral}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    dataDir=/data/data/com.example.mobilerequestcentral
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2015-06-30 09:23:42
+    firstInstallTime=2015-06-04 15:51:27
+    lastUpdateTime=2015-06-30 09:23:43
+    signatures=PackageSignatures{4afbd0bc [4afb89fc]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0:  installed=true blocked=false stopped=false notLaunched=false enabled=0
+    grantedPermissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.INTERNET

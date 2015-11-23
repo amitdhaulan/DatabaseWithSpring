@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/material_outer_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        style="@style/header"
+        android:layout_weight=".1"
+        android:gravity="left"
+        android:weightSum="1" >
+        <!--android:background="@drawable/navigationbar"-->
+
+
+        <Button
+            android:id="@+id/request_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="@drawable/buttoncustom"
+            android:padding="5dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/material_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="Service Requestor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_alignBaseline="@+id/request_button_back"
+            android:layout_alignBottom="@+id/request_button_back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/buttoncustom"
+            android:padding="5dp"
+            android:text="Refresh List"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.9" >
+        
+        <ExpandableListView
+            android:id="@+id/request_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style"
+            android:childDivider="#800000ff"
+            android:divider="#0000ff"
+            android:dividerHeight="1dp"
+            android:rotationX=".5"
+            android:scrollingCache="true"
+            android:textFilterEnabled="true" >
+            <!--android:fastScrollEnabled="true"-->
+            <!--android:fastScrollAlwaysVisible="true"-->
+
+        </ExpandableListView>
+
+    </LinearLayout>
+
+</LinearLayout>

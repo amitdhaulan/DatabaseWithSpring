@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\libs\Shutterbug-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a8cddf69c52e040ba2ba1dbf9cc9404b083bd351">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\Shutterbug-1.0.0-59c5847710090e73bb264f374f08b6e668d5a440.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\classes-92ca54dec20f76644937829e36cf33d4ee7a512b.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\classes-8aa6b536a134395d50962f663ff065e62707b167.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\Shutterbug-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a8cddf69c52e040ba2ba1dbf9cc9404b083bd351">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\Shutterbug-1.0.0-91cd33bfbfd2707bade369d3c337e19eb7d640f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-8a6dba4b1d01447ec0851bd79cfee0876848412f.jar" />
+    </item>
+    <item
+        jar="D:\softwares\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-efc1ddd532b024cb054d85b86a45824dedaaceec.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\libs\joda-time-2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\joda-time-2.0-65eef6ffa5de0443ed0bfd6833ef429a4bb19851.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\libs\httpmime-4.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b0002c5fb66867ca919be0fbd86de1cfaf76da7">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\httpmime-4.3-9dce990b46689bbf8dbfc09c7cbb4d407ad71e9e.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.3.2\559b70ac8a0d5cad611da4223137a920147201ba\jackson-core-2.3.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="559b70ac8a0d5cad611da4223137a920147201ba">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-core-2.3.2-6085c1b3c5031045c96f7b3de822064815450cea.jar" />
+    </item>
+    <item
+        jar="D:\softwares\adt-bundle-windows-x86_64-20131030\adt-bundle-windows-x86_64-20131030\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-217ba35fd4eba4eba3b9968f02ca9154da4fbc5d.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\libs\httpmime-4.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b0002c5fb66867ca919be0fbd86de1cfaf76da7">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\httpmime-4.3-30ae5d2dd6bcf304344483289b658f2c15de26c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.3.0\f5e853a20b60758922453d56f9ae1e64af5cb3da\jackson-annotations-2.3.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f5e853a20b60758922453d56f9ae1e64af5cb3da">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.3.0-9b0d2afc8dff2265a8dcdb86fa41873fe7519c7f.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\classes-078f1a6deaacc3a4ef62befd59bca5fe664a4423.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-f7d56de6b31471a509f10921ebf4880ab2ecfd61.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.3.2\c75edc740a6d8cb1cef6fa82fa594e0bce561916\jackson-databind-2.3.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c75edc740a6d8cb1cef6fa82fa594e0bce561916">
+        <dex dex="C:\Users\amitk\StudioProjects\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\jackson-databind-2.3.2-d6ee3bc472071d96297d8eedbeea6fb091be34c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\amitk\Desktop\MobileRequestCentral\app\libs\guava-r05.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="097fd3078118f05895ba5c3a95f3c335e2a2f34d">
+        <dex dex="C:\Users\amitk\Desktop\MobileRequestCentral\app\build\intermediates\pre-dexed\debug\guava-r05-aeb068a7df928e152f8301be181e91bdb2a47263.jar" />
+    </item>
+
+</items>

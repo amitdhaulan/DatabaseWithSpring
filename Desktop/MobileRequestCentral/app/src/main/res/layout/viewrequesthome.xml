@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".45"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="3" >
+        <!--android:layout_weight=".40"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/viewrequesthome_downloadrequest"
+                android:gravity="center_vertical"
+                android:paddingStart="120dp"
+                android:paddingEnd="0dp"
+                android:background="@drawable/downloadrequestbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+
+                android:text="Download Request"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+            <!--android:layout_height="@dimen/button_height"-->
+        </RelativeLayout>
+
+        <!--  <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="vertical"
+              android:layout_marginBottom="5dp"
+             android:weightSum="1" >
+
+             <Button
+                 android:id="@+id/menuscreen_button_reservespace"
+                 android:layout_width="150dp"
+                 android:layout_height="@dimen/button_height"
+                 android:layout_centerInParent="true"
+                 android:background="@drawable/buttoncustom"
+                 android:onClick="reserveSpace"
+                 android:text="@string/reserveSpace"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/textsize"
+                 android:textStyle="bold" />
+         </RelativeLayout> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="1dp"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/viewrequesthome_viewrequest"
+                android:gravity="center_vertical"
+                android:paddingStart="120dp"
+                android:paddingEnd="0dp"
+                android:background="@drawable/viewrequestbuttonnew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="View Request"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold"  />
+            <!--android:layout_height="@dimen/button_height"-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/viewrequesthome_home"
+                android:gravity="center_vertical"
+                android:paddingStart="120dp"
+                android:paddingEnd="0dp"
+                android:background="@drawable/homebutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:onClick="home"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+            <!--android:layout_height="@dimen/button_height"-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/menuscreen_button_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="120dp"
+                android:paddingEnd="0dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold"
+
+                android:background="@drawable/logoutbutton"
+                android:onClick="logout"
+                android:text="Logout"
+                />
+            <!--android:layout_height="@dimen/button_height"-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

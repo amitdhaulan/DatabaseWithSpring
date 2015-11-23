@@ -1,0 +1,950 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timelog_detail_outer_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+
+
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight=".1"
+        android:gravity="left">
+        <!--android:background="@drawable/navigationbar"-->
+
+
+        <Button
+            android:id="@+id/cancelreservationdetail_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttoncustom"
+            android:onClick="goback"
+            android:text="Back"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/makereservation_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="Reservation Detail"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Vrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/buttoncustom"
+            android:padding="5dp"
+            android:text="View Request"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#ffffff"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="2.4"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+                    <!--android:weightSum="3.6"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/date"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="false"
+                            android:focusableInTouchMode="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text="12/08/2015"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/starttime"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_starttime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text="15:15:00"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/endtime"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_endtime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text="16:15:00"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/building"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_building"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/floor"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_floor"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/space"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_space"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/reservationclass"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_reservationclass"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/roomcapacity"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_roomcapacity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/roomtype"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_roomtype"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/ada"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_adaavailable"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!-- <CheckBox
+                             android:id="@+id/reservationdetail_adaavailable"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight=".55"
+                             android:layout_gravity="center"/>-->
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/catering"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_cateringavailable"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!--<CheckBox
+                            android:id="@+id/reservationdetail_cateringavailable"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".55"
+                            android:layout_gravity="center"/>-->
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/network"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_networkconnection"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!--<CheckBox
+                            android:id="@+id/reservationdetail_networkconnection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".55"
+                            android:layout_gravity="center"/>-->
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/inroomprojector"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_inroomprojector"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        &lt;!&ndash;<CheckBox
+                            android:id="@+id/reservationdetail_inroomprojector"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".55"
+                            android:layout_gravity="center"/>&ndash;&gt;
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/whiteboard"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_whiteboard"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!--<CheckBox
+                            android:id="@+id/reservationdetail_whiteboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".55"
+                            android:layout_gravity="center"/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/conferencephone"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_conferencephone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!--  <CheckBox
+                              android:id="@+id/reservationdetail_conferencephone"
+                              android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight=".55"
+                              android:layout_gravity="center"/>-->
+
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/conferencephonenumber"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_conferencephonenumber"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        &lt;!&ndash; <CheckBox
+                             android:id="@+id/reservationdetail_conferencephonenumber"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight=".55"
+                             android:layout_gravity="center"/>&ndash;&gt;
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/videoconference"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_videoconference"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+                        <!-- <CheckBox
+                             android:id="@+id/reservationdetail_videoconference"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight=".55"
+                             android:layout_gravity="center"/>-->
+
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="1"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_weight=".2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:text="@string/videoconferenceinfo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=":"
+                            android:textSize="14dp"
+                            android:gravity="left|center_vertical"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/cancelreservationdetail_videoconferenceinfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".55"
+                            android:text=""/>
+
+
+                        &lt;!&ndash;<CheckBox
+                            android:id="@+id/reservationdetail_videoconferenceinfo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".55"
+                            android:layout_gravity="center"/>&ndash;&gt;
+
+
+                    </LinearLayout>-->
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight=".1">
+
+                    <CheckBox
+                        android:id="@+id/reservationcheckbox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Check In"
+            android:background="@drawable/buttoncustom"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginRight="1dp"
+            android:id="@+id/reservationdetail_button_checkin" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/buttoncustom"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:text="Cancel"
+            android:layout_height="match_parent"
+            android:id="@+id/cancelreservationdetail_button_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

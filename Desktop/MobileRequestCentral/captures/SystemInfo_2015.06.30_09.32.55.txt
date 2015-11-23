@@ -1,0 +1,38 @@
+Total number of currently running services:0
+Applications Memory Usage (kB):
+Uptime: 2028170 Realtime: 2028170
+
+** MEMINFO in pid 4632 [com.example.mobilerequestcentral] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     4719     4668        0        0     8900     5736      159
+  Dalvik Heap    10842    10792        0        0    12000    11958       42
+ Dalvik Other     1177     1008        0        0                           
+        Stack       96       96        0        0                           
+       Cursor        8        8        0        0                           
+       Ashmem     6216        0        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     1666      528      144        0                           
+    .apk mmap      101        0       28        0                           
+    .ttf mmap        2        0        0        0                           
+    .dex mmap      637       20      220        0                           
+   Other mmap       16        4        0        0                           
+      Unknown       60       60        0        0                           
+        TOTAL    25544    17184      396        0    20900    17694      201
+ 
+ Objects
+               Views:      116         ViewRootImpl:        6
+         AppContexts:        4           Activities:        2
+              Assets:        2        AssetManagers:        2
+       Local Binders:       13        Proxy Binders:       18
+    Death Recipients:        0
+     OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      138
+  PAGECACHE_OVERFLOW:       57          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4       48             30         3/42/4  /data/data/com.example.mobilerequestcentral/databases/Location1.db
